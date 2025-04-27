@@ -1,4 +1,4 @@
-# 🗳️ Decentralized Voting System Using Blockchain
+# Decentralized Voting System Using Blockchain
 
 A full-stack proof-of-concept that demonstrates how **Ethereum smart contracts** can power a tamper-resistant voting platform while a traditional **MySQL** backend stores voter metadata.  
 The stack looks like this:
@@ -13,7 +13,7 @@ The stack looks like this:
 
 ---
 
-## ✨ Features
+## Features
 
 * **One-person-one-vote** enforcement on-chain  
 * **End-to-end verifiability** – anyone can audit the block data
@@ -34,7 +34,7 @@ The stack looks like this:
 
 ---
 
-## 🛠️ Prerequisites
+## Prerequisites
 
 | Tool | Tested Version |
 |------|----------------|
@@ -47,7 +47,7 @@ The stack looks like this:
 
 ---
 
-## ⚡ Quick Start
+## Quick Start
 
 ```bash
 # 1 ╱ Clone repo & install JS deps
@@ -96,7 +96,7 @@ node index.js
 
 # 9 ╱ Open http://localhost:8080  🎉
 ```
-## 🏗️ Detailed Setup
+## Detailed Setup
 1. Ganache Workspace
 - Start Ganache GUI → New Workspace
 - Point workspace to this repo’s truffle-config.js so Truffle & Ganache share the same chain ID (1337) and port (7545).
@@ -133,7 +133,7 @@ JWT_SECRET=<random-32-byte-hex>
 - contracts/Voting.sol – core ballot logic
 - migrations/2_deploy_voting.js – deploys the contract with initial candidates
 
-## 🗂️ Project Structure
+## Project Structure
 ```bash
 Decentralized-Voting-System-Using-Blockchain/
 ├── contracts/              # Solidity smart contracts
@@ -148,12 +148,12 @@ Decentralized-Voting-System-Using-Blockchain/
 ├── index.js                # Express static server (port 8080)
 └── truffle-config.js       # Truffle & Ganache settings
 ```
-## 🚀 Usage
+## Usage
 - Register Voter – submit your Eth address & name (stored in MySQL).
 - Create Election – (owner only) deploys new ballot contract.
 - Cast Vote – MetaMask pops up to sign the TX; duplicate votes are rejected on-chain.
 - See Results – tallies come straight from the contract’s public state.
 
-## 🤝 Contributing
+## Contributing
 - Pull requests are welcome! Please open an issue first to discuss major changes.
 - Make sure your code passes npm run lint and truffle test before submitting.
